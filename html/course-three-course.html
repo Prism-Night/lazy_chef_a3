@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- since it needs to be adaptive website is am using device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Course</title>
+    <link rel="stylesheet" href="/Lazy-Chef/css/styles.css">
+</head>
+
+<body>
+    <header class="main-head">
+        <div class="HBmenu">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul class="menu-header">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes-a-main.html">Recipes</a>
+                    <ul class="dropdown">
+                        <li><a href="recipes-all-recipes.html">All Recipes</a></li>
+                        <li><a href="recipes-most-recent.html">Most Recent</a></li>
+                        <li><a href="recipes-top-rated.html">Top Rated</a></li>
+                        <li><a href="recipes-favorite.html" class="disabled">Favorite</a></li>
+                    </ul>
+                </li>
+                <li><a href="meals-a-main.html">Meals</a>
+                    <ul class="dropdown">
+                        <li><a href="meals-breakfast.html">Breakfast</a></li>
+                        <li><a href="meals-main-course.html">Main Course</a></li>
+                        <li><a href="meals-snacks.html">Snacks</a></li>
+                        <li><a href="meals-desserts.html">Desserts</a></li>
+                    </ul>
+                </li>
+                <li><a href="course-a-main.html">Courses</a>
+                    <ul class="dropdown">
+                        <li><a href="course-one-course.html">1 Course</a></li>
+                        <li><a href="course-two-course.html">2 Course</a></li>
+                        <li><a href="course-three-course.html">3 Course</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="user-profile.html">User</a>
+                    <ul class="dropdown">
+                        <li><a href="#registerPopup">Registration</a></li>
+                        <li><a href="personal-details.html" class="disabled">Personal Details</a></li>
+                        <li><a href="setting.html" class="disabled">Settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <h1><a href="index.html" class="lazyhead">Lazy Chef</a></h1>
+        <div class="search-container">
+            <form action="/search" method="get" class="search-bar">
+                <input type="text" placeholder="Search . . . " name="query" required>
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+
+        <a class="login-link" href="#loginPopup">Login</a>
+        <!-- adding a button gives a warning and is not a good practice. The element "a" must not appear as a descendant of the "button" element.-->
+        <section id="loginPopup" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <form class="form">
+                    <h2>Login</h2>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="popup-button">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="registerPopup" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <form class="form">
+                    <h2>Register</h2>
+                    <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="popup-button">Register</button>
+                </form>
+            </div>
+        </section>
+    </header>
+
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" class="hide">Home</a></li>
+            <li><a href="recipes-a-main.html">Recipes</a>
+                <ul class="dropdown">
+                    <li><a href="recipes-all-recipes.html">All Recipes</a></li>
+                    <li><a href="recipes-most-recent.html">Most Recent</a></li>
+                    <li><a href="recipes-top-rated.html">Top Rated</a></li>
+                    <li><a href="recipes-favorite.html" class="disabled">Favorite</a></li>
+                </ul>
+            </li>
+            <li><a href="meals-a-main.html">Meals</a>
+                <ul class="dropdown">
+                    <li><a href="meals-breakfast.html">Breakfast</a></li>
+                    <li><a href="meals-main-course.html">Main Course</a></li>
+                    <li><a href="meals-snacks.html">Snacks</a></li>
+                    <li><a href="meals-desserts.html">Desserts</a></li>
+                </ul>
+            </li>
+            <li><a href="course-a-main.html">Courses</a>
+                <ul class="dropdown">
+                    <li><a href="course-one-course.html">1 Course</a></li>
+                    <li><a href="course-two-course.html">2 Course</a></li>
+                    <li><a href="course-three-course.html">3 Course</a></li>
+                </ul>
+            </li>
+            <li><a href="about-us.html">About</a></li>
+            <li><a href="user-profile.html">User</a>
+                <ul class="dropdown">
+                    <li><a href="#registerPopup">Registration</a></li>
+                    <li><a href="personal-details.html" class="disabled">Personal Details</a></li>
+                    <li><a href="setting.html" class="disabled">Settings</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main id="home">
+        <nav class="side-menu-container">
+            <h2 class="head-side-menu">Courses</h2>
+            <ul class="side-menu">
+                <li><a href="course-one-course.html">1 Course</a></li>
+                <li><a href="course-two-course.html">2 Course</a></li>
+                <li><a href="course-three-course.html">3 Course</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h3 class="category-sidemenu">3 Course</h3>
+            <hr class="hr-sidemenu">
+            <div class="recipe-grid-sidemenu">
+                <article class="recipe-card-sidemenu">
+                    <img src="/Lazy-Chef/img/recipe-a1.jpg" alt="" class="recipe-image">
+                    <h4 class="recipe-head"><a href="Recipe-a1.html">Sassy Spaghetti Aglio e Olio</a></h4>
+                    <p class="recipe-summary"><a href="Recipe-a1.html">A quick and easy Italian classic with a kick!</a>
+                    </p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 1</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salmon.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 2</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/French-toast.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 3</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 4</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 5</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 6</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 7</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salmon.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 8</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/French-toast.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 9</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 10</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 11</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 12</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 13</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salmon.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 14</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/French-toast.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 15</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 16</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 17</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 18</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 19</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salmon.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 20</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/French-toast.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 21</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 22</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 23</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe </h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 1</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salmon.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 2</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/French-toast.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 3</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 4</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 5</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe </h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 1</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salmon.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 2</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least amount
+                        of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/French-toast.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 3</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least
+                        amount of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Eggs.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 4</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the least
+                        amount of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+                <article class="recipe-card-sidemenu">
+                    <img src="../img/Salad.jpg" alt="" class="recipe-image-sidemenu">
+                    <h4 class="recipe-head-sidemenu">Delicious Recipe 5</h4>
+                    <p class="recipe-summary-sidemenu">A quick and Healthy Option to choose from with the
+                        least amount of time spent in seleting ingredients and preparing the dish.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lazy Chef </p>
+    </footer>
+</body>
+
+</html>
