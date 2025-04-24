@@ -1,22 +1,9 @@
 <!-- login.php  -->
 <?php
-session_start();
-
 include('session-setup.php'); // Include session_setup.php to access its functions
 
 // Database connection
-$db_server = "localhost";
-$db_name = "lazt_chef_a1";
-$db_user = "root";
-$db_pass = "";
-
-try {
-    // Create PDO connection
-    $pdo = new PDO("mysql:host=$db_server;dbname=$db_name", $db_user, $db_pass);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Database connection failed: " . $e->getMessage());
-}
+include('db_connect.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
